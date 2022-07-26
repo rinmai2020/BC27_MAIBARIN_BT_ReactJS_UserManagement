@@ -33,8 +33,8 @@ export default class UserList extends Component {
 					<tbody>
 						{users.map((user, index) => {
 							return (
-								<tr key={index}>
-									<td>{user.id}</td>
+								<tr key={user.id}>
+									<td>{index + 1}</td>
 									<td>{user.account}</td>
 									<td>{user.username}</td>
 									<td>{user.password}</td>

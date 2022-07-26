@@ -142,7 +142,6 @@ export default class UserForm extends Component {
 								Mã loại người dùng
 							</label>
 							<select
-								style={{ cursor: "pointer" }}
 								id="type"
 								className="form-select"
 								value={values.type}
@@ -150,11 +149,11 @@ export default class UserForm extends Component {
 								onChange={this.handleChange}
 							>
 								<option value="">Vui lòng chọn</option>
-								<option value="Khách hàng">Khách hàng</option>
+								<option>Khách hàng</option>
 							</select>
 						</div>
 					</div>
-					<div className="mt-3">
+					<div className="mt-2">
 						<button
 							className="btn btn-success me-2"
 							disabled={this.props.disabled}
